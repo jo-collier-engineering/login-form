@@ -1,4 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import CredentialsPage from "../pages/CredentialsPage/CredentialsPage";
+import ForgotPasswordPage from "../pages/ForgotPasswordPage/ForgotPasswordPage";
+import LandingPage from "../pages/LandingPage/LandingPage";
 import BlobLayout from "../layouts/BlobLayout/BlobLayout";
 
 const AppRouter = () => (
@@ -6,9 +9,9 @@ const AppRouter = () => (
     <Routes>
       <Route path="/" element={<BlobLayout />}>
         <Route index element={<Navigate to="/credentials" replace />} />
-        <Route path="credentials" element={<div>Credentials Page Placeholder</div>} />
-        <Route path="forgot-password" element={<div>Forgot Password Page Placeholder</div>} />
-        <Route path="dashboard" element={<div>Dashboard Page Placeholder</div>} />
+        <Route path="credentials" element={<CredentialsPage />} />
+        <Route path="forgot-password" element={<ForgotPasswordPage />} />
+        <Route path="dashboard" element={<LandingPage />} />
         <Route path="*" element={<Navigate to="/credentials" replace />} />
       </Route>
     </Routes>
