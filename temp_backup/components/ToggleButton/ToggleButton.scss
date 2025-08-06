@@ -1,0 +1,56 @@
+@use '../../styles/base/variables' as *;
+
+.toggle-button {
+  display: flex;
+  gap: 4px;
+  margin: $spacing-sm 0;
+  background: $color-background-panel;
+  border-radius: $input-border-radius;
+  padding: 4px;
+  border: 1px solid $color-border-default;
+}
+
+.toggle-button__button {
+  flex: 1;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: $color-text-secondary;
+  font-weight: 500;
+  font-size: $font-size-body;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-family: $font-family;
+  transform: translateY(0);
+  position: relative;
+  overflow: hidden;
+}
+
+.toggle-button__button.selected {
+  background: $color-accent-primary;
+  color: $color-text-primary;
+  box-shadow: 0 2px 8px rgba(66, 87, 245, 0.3);
+  transform: translateY(-1px);
+}
+
+.toggle-button__button:hover:not(.selected) {
+  background: rgba(255, 255, 255, 0.1);
+  color: $color-text-primary;
+  transform: translateY(-1px);
+}
+
+.toggle-button__button:focus {
+  outline: 2px solid $color-border-focus;
+  outline-offset: 2px;
+}
+
+@media (max-width: 640px) {
+  .toggle-button {
+    flex-direction: column;
+  }
+  
+  .toggle-button__button {
+    padding: 16px 12px;
+  }
+} 

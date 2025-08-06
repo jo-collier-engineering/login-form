@@ -1,0 +1,7 @@
+@use '../../styles/base/variables' as *;
+
+main h1 {
+  font-size: $font-size-heading;
+  margin-bottom: $spacing-md;
+  color: $color-text-primary;
+}

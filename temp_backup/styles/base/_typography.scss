@@ -1,0 +1,55 @@
+@use 'variables' as *;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 $spacing-sm 0;
+  text-shadow: 0 1px 3px $color-text-shadow;
+}
+
+h1 {
+  text-align: center;
+  font-size: $font-size-heading;
+  margin-bottom: $spacing-sm;
+}
+
+h2 {
+  font-size: $font-size-body;
+  margin-bottom: $spacing-sm;
+}
+
+h3, h4, h5, h6 {
+  font-size: $font-size-body;
+  margin-bottom: $spacing-xs;
+}
+
+p, span, div, label, input, textarea, select {
+  font-family: $font-family;
+  font-size: $font-size-body;
+  line-height: 1.6;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+input, textarea, select {
+  text-shadow: none;
+}
+
+.form__error {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+  font-weight: 600;
+}
+
+.form__success {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+  font-weight: 600;
+}
+
+a {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+} 

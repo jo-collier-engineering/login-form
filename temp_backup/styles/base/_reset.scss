@@ -1,0 +1,14 @@
+@use 'variables' as *;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: $font-family;
+  color: $color-text-primary;
+  min-height: 100vh;
+  line-height: 1.6;
+  overflow-x: hidden;
+} 

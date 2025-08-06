@@ -1,0 +1,42 @@
+@use '../../styles/base/variables' as *;
+
+.card {
+  background: $color-background-panel;
+  border-radius: $card-border-radius;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    0 4px 16px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px);
+  border: 2px solid $color-border-default;
+  padding: $spacing-sm;
+  width: 100%;
+  max-width: 480px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(0);
+}
+
+.card:focus-within {
+  border-color: $color-border-focus;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    0 4px 16px rgba(0, 0, 0, 0.2),
+    0 0 0 4px rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 640px) {
+  .card {
+    max-width: 400px;
+    padding: $spacing-xs;
+    border-width: 1px;
+  }
+}
+
+@media (prefers-contrast: high) {
+  .card {
+    background: rgba(255, 255, 255, 0.25);
+    border: 3px solid $color-border-focus;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+  }
+} 

@@ -1,0 +1,53 @@
+@use '../../styles/base/variables' as *;
+
+.remember-me {
+  margin-bottom: $spacing-sm;
+}
+
+.remember-me__label {
+  display: flex;
+  align-items: center;
+  gap: $spacing-xs;
+  cursor: pointer;
+  font-size: $font-size-body;
+  color: $color-text-primary;
+  transition: all 0.2s ease-in-out;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.remember-me__label:hover {
+  color: $color-text-primary;
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-1px);
+}
+
+.remember-me__checkbox {
+  width: 18px;
+  height: 18px;
+  accent-color: $color-accent-primary;
+  cursor: pointer;
+}
+
+.remember-me__checkbox:focus {
+  outline: 2px solid $color-border-focus;
+  outline-offset: 2px;
+}
+
+.remember-me__text {
+  font-weight: 500;
+}
+
+.remember-me__description {
+  display: block;
+  margin-top: $spacing-xs;
+  font-size: $font-size-caption;
+  color: $color-text-secondary;
+  line-height: 1.4;
+}
+
+@media (max-width: 640px) {
+  .remember-me__label {
+    font-size: 16px;
+  }
+} 

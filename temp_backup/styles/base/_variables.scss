@@ -1,0 +1,66 @@
+:root {
+  --color-background-panel: rgba(255, 255, 255, 0.25);
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #E5E7EB;
+  --color-text-error: #E53E3E;
+  --color-text-success: #51CF66;
+  --color-text-placeholder: #D1D5DB;
+  --color-accent-primary: #6366F1;
+  --color-border-default: rgba(255, 255, 255, 0.3);
+  --color-border-focus: #FFFFFF;
+  --color-text-shadow: rgba(0, 0, 0, 0.8);
+
+  --color-bg1: rgb(108, 0, 162);
+  --color-bg2: rgb(0, 17, 82);
+  --color1: 18, 113, 255;
+  --color2: 221, 74, 255;
+  --color3: 100, 220, 255;
+  --color4: 200, 50, 50;
+  --color5: 180, 180, 50;
+  --color-interactive: 45, 15, 85;
+  --circle-size: 80%;
+  --blending: hard-light;
+  
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
+  --spacing-lg: 32px;
+  --spacing-xl: 40px;
+  
+  --font-family: 'Inter', 'Poppins', sans-serif;
+  --font-size-heading: clamp(1.5rem, 2vw, 2.5rem);
+  --font-size-body: clamp(0.9rem, 1vw, 1.125rem);
+  --font-size-caption: clamp(0.75rem, 0.9vw, 1rem);
+  
+  --input-height: 48px;
+  --input-border-radius: 12px;
+  --card-border-radius: 24px;
+  --button-border-radius: 12px;
+}
+
+$color-background-panel: var(--color-background-panel);
+$color-text-primary: var(--color-text-primary);
+$color-text-secondary: var(--color-text-secondary);
+$color-text-error: var(--color-text-error);
+$color-text-success: var(--color-text-success);
+$color-text-placeholder: var(--color-text-placeholder);
+$color-accent-primary: var(--color-accent-primary);
+$color-border-default: var(--color-border-default);
+$color-border-focus: var(--color-border-focus);
+$color-text-shadow: var(--color-text-shadow);
+
+$spacing-xs: var(--spacing-xs);
+$spacing-sm: var(--spacing-sm);
+$spacing-md: var(--spacing-md);
+$spacing-lg: var(--spacing-lg);
+$spacing-xl: var(--spacing-xl);
+
+$font-family: var(--font-family);
+$font-size-heading: var(--font-size-heading);
+$font-size-body: var(--font-size-body);
+$font-size-caption: var(--font-size-caption);
+
+$input-height: var(--input-height);
+$input-border-radius: var(--input-border-radius);
+$card-border-radius: var(--card-border-radius);
+$button-border-radius: var(--button-border-radius); 

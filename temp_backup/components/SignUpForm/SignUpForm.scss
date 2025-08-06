@@ -1,0 +1,117 @@
+@use '../../styles/base/variables' as *;
+
+.form {
+  margin-top: $spacing-md;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.form__actions {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xs;
+}
+
+.form__error {
+  color: $color-text-error;
+  font-size: $font-size-caption;
+  margin-top: $spacing-xs;
+  margin-bottom: $spacing-xs;
+  display: flex;
+  align-items: center;
+  height: 25px;
+  line-height: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: 600;
+  padding: $spacing-xs;
+}
+
+.form__success {
+  color: $color-text-success;
+  font-size: $font-size-caption;
+  margin-top: $spacing-xs;
+  display: block;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: $button-border-radius;
+  font-weight: 600;
+  font-size: $font-size-body;
+  cursor: pointer;
+  border: none;
+  font-family: $font-family;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn--primary {
+  background: #1E1E2F;
+  color: $color-text-primary;
+}
+
+.btn--primary:hover:not(:disabled) {
+  background: #292938;
+}
+
+.btn--primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn--secondary {
+  background: transparent;
+  border: 1px solid $color-text-primary;
+  color: $color-text-primary;
+}
+
+.btn--secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.btn--link {
+  background: transparent;
+  color: $color-text-secondary;
+  text-decoration: underline;
+  padding: 8px 0;
+}
+
+.btn--link:hover {
+  color: $color-text-primary;
+}
+
+[aria-busy="true"] {
+  position: relative;
+  color: transparent;
+}
+
+[aria-busy="true"]::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  border: 2px solid transparent;
+  border-top: 2px solid currentColor;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+*:focus {
+  outline: 2px solid $color-border-focus;
+  outline-offset: 2px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+} 
