@@ -11,7 +11,7 @@ A modern, accessible React login form application with comprehensive form valida
 - **Remember Me** - Secure token-based session management
 - **Responsive Design** - Mobile-first approach with modern CSS
 - **Comprehensive Testing** - Full test coverage with Vitest and React Testing Library
-- **Beautiful UI** - Animated blob background with toggle controls
+- **Beautiful UI** - Animated blob background with toggle controls, animated buttons, form transitions and mirco interactions
 - **Mock API** - Simulated backend
 
 ## Getting Started
