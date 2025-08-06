@@ -134,7 +134,7 @@
 
 @media (prefers-reduced-motion: reduce) {
   .gradient-bg {
-    background: linear-gradient(135deg, #1a1a2e, #16213e) !important;
+    background: linear-gradient(135deg, $color-background-black, $color-background-dark) !important;
   }
   
   .gradients-container {
@@ -148,7 +148,7 @@
 
 @media (prefers-contrast: high) {
   .gradient-bg {
-    background: linear-gradient(135deg, #000000, #1a1a2e) !important;
+    background: linear-gradient(135deg, $color-background-black, $color-background-dark) !important;
   }
   
   .g1, .g2, .g3, .g4, .g5 {

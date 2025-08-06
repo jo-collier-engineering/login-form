@@ -30,12 +30,12 @@
 .toggle-button__button.selected {
   background: $color-accent-primary;
   color: $color-text-primary;
-  box-shadow: 0 2px 8px rgba(66, 87, 245, 0.3);
+  box-shadow: 0 2px 8px $color-accent-overlay;
   transform: translateY(-1px);
 }
 
 .toggle-button__button:hover:not(.selected) {
-  background: rgba(255, 255, 255, 0.1);
+  background: $color-overlay-light;
   color: $color-text-primary;
   transform: translateY(-1px);
 }

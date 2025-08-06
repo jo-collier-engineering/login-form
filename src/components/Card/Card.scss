@@ -4,8 +4,8 @@
   background: $color-background-panel;
   border-radius: $card-border-radius;
   box-shadow: 
-    0 8px 32px rgba(0, 0, 0, 0.4),
-    0 4px 16px rgba(0, 0, 0, 0.2);
+    0 8px 32px $color-shadow-strong,
+    0 4px 16px $color-shadow-medium;
   backdrop-filter: blur(20px);
   border: 2px solid $color-border-default;
   padding: $spacing-sm;
@@ -19,9 +19,9 @@
 .card:focus-within {
   border-color: $color-border-focus;
   box-shadow: 
-    0 8px 32px rgba(0, 0, 0, 0.4),
-    0 4px 16px rgba(0, 0, 0, 0.2),
-    0 0 0 4px rgba(255, 255, 255, 0.1);
+    0 8px 32px $color-shadow-strong,
+    0 4px 16px $color-shadow-medium,
+    0 0 0 4px $color-overlay-light;
   transform: translateY(-2px);
 }
 
@@ -35,8 +35,8 @@
 
 @media (prefers-contrast: high) {
   .card {
-    background: rgba(255, 255, 255, 0.25);
+    background: $color-background-panel;
     border: 3px solid $color-border-focus;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 8px 32px $color-shadow-very-strong;
   }
 } 

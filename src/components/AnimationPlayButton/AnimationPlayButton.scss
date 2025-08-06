@@ -5,8 +5,8 @@
   top: $spacing-md;
   right: $spacing-md;
   z-index: 10;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: $color-overlay-light;
+  border: 1px solid $color-overlay-heavy;
   border-radius: 50%;
   width: 48px;
   height: 48px;
@@ -20,13 +20,13 @@
 }
 
 .animation-toggle:hover {
-  background: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.3);
+  background: $color-overlay-heavy;
+  border-color: $color-overlay-strong;
   transform: scale(1.05);
 }
 
 .animation-toggle:focus {
-  outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline: 2px solid $color-border-focus;
   outline-offset: 2px;
 }
 

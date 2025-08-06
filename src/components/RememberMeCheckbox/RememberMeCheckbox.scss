@@ -18,7 +18,7 @@
 
 .remember-me__label:hover {
   color: $color-text-primary;
-  background: rgba(255, 255, 255, 0.05);
+  background: $color-overlay-light;
   transform: translateY(-1px);
 }
 

@@ -51,12 +51,12 @@
 }
 
 .btn--primary {
-  background: #1E1E2F;
+  background: $color-background-dark;
   color: $color-text-primary;
 }
 
 .btn--primary:hover:not(:disabled) {
-  background: #292938;
+  background: $color-background-darker;
 }
 
 .btn--primary:disabled {
@@ -71,7 +71,7 @@
 }
 
 .btn--secondary:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: $color-overlay-light;
 }
 
 .btn--link {

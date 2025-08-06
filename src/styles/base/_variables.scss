@@ -9,6 +9,25 @@
   --color-border-default: rgba(255, 255, 255, 0.3);
   --color-border-focus: #FFFFFF;
   --color-text-shadow: rgba(0, 0, 0, 0.8);
+  
+  --color-background-dark: #1E1E2F;
+  --color-background-darker: #292938;
+  --color-background-black: #000000;
+  --color-error-red: #FF0000;
+  --color-success-green: #00FF00;
+  --color-overlay-light: rgba(255, 255, 255, 0.1);
+  --color-overlay-medium: rgba(255, 255, 255, 0.15);
+  --color-overlay-heavy: rgba(255, 255, 255, 0.2);
+  --color-overlay-strong: rgba(255, 255, 255, 0.3);
+  --color-shadow-light: rgba(0, 0, 0, 0.1);
+  --color-shadow-medium: rgba(0, 0, 0, 0.2);
+  --color-shadow-heavy: rgba(0, 0, 0, 0.3);
+  --color-shadow-strong: rgba(0, 0, 0, 0.4);
+  --color-shadow-very-strong: rgba(0, 0, 0, 0.6);
+  --color-shadow-strongest: rgba(0, 0, 0, 0.8);
+  --color-error-overlay: rgba(255, 107, 107, 0.1);
+  --color-success-overlay: rgba(81, 207, 102, 0.1);
+  --color-accent-overlay: rgba(66, 87, 245, 0.3);
 
   --color-bg1: rgb(108, 0, 162);
   --color-bg2: rgb(0, 17, 82);
@@ -48,6 +67,25 @@ $color-accent-primary: var(--color-accent-primary);
 $color-border-default: var(--color-border-default);
 $color-border-focus: var(--color-border-focus);
 $color-text-shadow: var(--color-text-shadow);
+
+$color-background-dark: var(--color-background-dark);
+$color-background-darker: var(--color-background-darker);
+$color-background-black: var(--color-background-black);
+$color-error-red: var(--color-error-red);
+$color-success-green: var(--color-success-green);
+$color-overlay-light: var(--color-overlay-light);
+$color-overlay-medium: var(--color-overlay-medium);
+$color-overlay-heavy: var(--color-overlay-heavy);
+$color-overlay-strong: var(--color-overlay-strong);
+$color-shadow-light: var(--color-shadow-light);
+$color-shadow-medium: var(--color-shadow-medium);
+$color-shadow-heavy: var(--color-shadow-heavy);
+$color-shadow-strong: var(--color-shadow-strong);
+$color-shadow-very-strong: var(--color-shadow-very-strong);
+$color-shadow-strongest: var(--color-shadow-strongest);
+$color-error-overlay: var(--color-error-overlay);
+$color-success-overlay: var(--color-success-overlay);
+$color-accent-overlay: var(--color-accent-overlay);
 
 $spacing-xs: var(--spacing-xs);
 $spacing-sm: var(--spacing-sm);
